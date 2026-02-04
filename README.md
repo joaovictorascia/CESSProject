@@ -1,16 +1,89 @@
-# React + Vite
+# Block+ - Decentralized File Storage on CESS Network
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 What is Block+?
 
-Currently, two official plugins are available:
+Block+ is a **decentralized file storage service** running on the **CESS Network** with DeOSS. It provides secure, private, and censorship-resistant file storage using blockchain technology.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔐 Why Decentralized Storage?
 
-## React Compiler
+- **True Ownership**: You control your data, not corporations
+- **Enhanced Security**: End-to-end encryption & no single point of failure
+- **Censorship Resistance**: Files can't be arbitrarily removed
+- **Cost Efficiency**: Reduced middleman costs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Blockchain**: CESS Network (Substrate-based)
+- **Web3**: @polkadot.js, @polkadot/extension-dapp
+- **Backend**: Express.js, SQLite, JWT, Multer
+- **Frontend**: React, TypeScript, TanStack Router, Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📁 Features
+- ✅ Easy-to-use (Clear abstraction, no previous knowledge is Blockchain is needed)
+- ✅ Secure file upload/download
+- ✅ Client-side encryption
+- ✅ Wallet-based authentication (Polkadot.js)
+- ✅ File management (list, delete)
+- ✅ Progress tracking & notifications
+
+## 🌐 Usage
+
+1. Open frontend URL
+2. Connect Polkadot wallet
+3. Register username
+4. Upload/manage files
+
+## 🚀 Setup
+
+1. **Backend:**
+```bash
+cd backend
+npm install
+```
+Edit `.env`:
+```env
+JWT_SECRET="your_jwt_secret_key"
+TERRITORY="your_territory_name"
+ACCOUNT="your_wallet"
+SIGNATURE="your_signature"
+MESSAGE="your_territory_name"
+CESS_API_URL="deoss_gateway_addr"
+```
+
+2. **Frontend:**
+```bash
+cd frontend
+npm install
+```
+
+## ▶️ Run
+
+**Backend (always port 5003):**
+```bash
+cd backend
+npm run dev
+```
+
+**Frontend (random port):**
+```bash
+cd frontend
+npm run dev
+```
+Check console for frontend URL.
+
+## 🌐 Use
+
+1. Open frontend URL from console
+2. Register with Polkadot{.js} extension
+3. Everything works automatically after login
+
+## 📝 Notes
+- Backend: `localhost:5003`
+- Frontend: `localhost:[RANDOM_PORT]`
+- Polkadot wallet required
+- Edit `.env` before starting backend
+
+---
+
+*Block+ puts you in control of your digital assets in the Web3 era.*
